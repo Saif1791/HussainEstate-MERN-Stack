@@ -4,11 +4,14 @@ import About from "./pages/About.jsx";
 import Profile from "./pages/Profile.jsx";
 import SignIn from "./pages/SignIn.jsx";
 import SignUp from "./pages/SignUp.jsx";
+import Header from "./components/Header.jsx";
 const App = () => {
   return (
     <div>
+    <Header />
       <BrowserRouter>
         <Routes>
+          
           <Route path="*" element={<Home />}></Route>
           <Route path="/home" element={<Home />}></Route>
           <Route path="/about" element={<About />}></Route>
